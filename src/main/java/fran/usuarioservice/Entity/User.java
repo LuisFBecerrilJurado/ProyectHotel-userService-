@@ -2,7 +2,6 @@ package fran.usuarioservice.Entity;
 
 /*
   * Clase para el modelado de la entidad Usuario para el proyecto "HOTEL"
-  *
 */
 
 
@@ -16,14 +15,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="users")
 @Data
-public class UserEntity {
+public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userID;
-    @Column(unique=true)
-    @Column(nullable = false)
+    private String userID;
     private String name;
-    @Column(nullable = false)
     private String email;
     private String information;
 }
