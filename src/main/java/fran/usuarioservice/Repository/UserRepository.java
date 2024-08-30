@@ -1,7 +1,7 @@
 package fran.usuarioservice.Repository;
 
-import fran.usuarioservice.Entity.UserEntity;
+import fran.usuarioservice.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface userRepository extends JpaRepository<Long, UserEntity> {
+public interface UserRepository extends JpaRepository<User,String> {
 }
