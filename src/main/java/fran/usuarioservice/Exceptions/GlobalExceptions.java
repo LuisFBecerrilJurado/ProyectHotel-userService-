@@ -1,13 +1,11 @@
-package fran.usuarioservice.Exceptions.Global;
+package fran.usuarioservice.Exceptions;
 
 /*
- * Clase para el manejo de excepciones como parte de la respuesta a la consulta de la API
- ? con la anotación "@RestControllerAdvice" se capturan y manejan las excepciones lanzadas por el controlador
- ? evitando la duplicacion de codigo
- ! Se llama a la clase de ApiResponse para crear una respuesta con los mensajes personalizados
+ * Class for handling exceptions as part of an API Response.
+ ? With @RestControllerAdvice annotation, exceptions thrown by controllers are captured and handled.
+ ! The ApiResponse class is called to create a response with custom messages
 */
 
-import fran.usuarioservice.Exceptions.NotFoundException;
 import fran.usuarioservice.Response.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
