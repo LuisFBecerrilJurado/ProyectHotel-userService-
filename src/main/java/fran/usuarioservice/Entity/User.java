@@ -1,10 +1,5 @@
 package fran.usuarioservice.Entity;
 
-/*
-  * Clase para el modelado de la entidad Usuario para el proyecto "HOTEL"
-*/
-
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
